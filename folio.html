@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light" style="padding-bottom: 0px;
+        margin-bottom: 0px;">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Sree Aurovindh</a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul id="navLinks" class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Me
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="whois.html">Who is Sree Aurovindh</a>
+                  <a class="dropdown-item" href="research.html">Research and Work </a>
+                  <!-- <a class="dropdown-item" href="employment.html">Employment History</a> -->
+
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="folio.html">Portfolio</a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="container">
+      <br>
+      <h1 class="heading">Portfolio</h1><hr/><br><br>
+          Hello! Thank you for visiting my project portfolio page. This page contains personal representation of my professional materials and research work
+          throughout my career. My current focus is on completing my doctoral research in machine Learning and educational data mining. In addition, I am very interested in intern opportunities in the field of Data science.
+          More information about me can be found <a href="whois.html"> here</a>.
+
+      Please feel free to choose a category to explore more of my projects.
+      <p>
+      <br/>
+          <strong>Please find below a selection of my works:</strong><br> <small> This page is still in active development</small>
+      </p>
+
+
+
+      <br>
+    </div>
+    <div class="container">
+      <div class="row flex">
+        <div class="col-sm-4" style="background-image:url('./img/slipes.png');
+        padding-left: 50px; max-height: 25px;">
+          <h4 style="font-weight: bold;" class="portfolioHeading">
+              Select a Category
+          </h4><br>
+        </div>
+        <div class="col-sm-8 projectNav" style="padding-left: 0px;">
+          <ul>
+            <li><a onclick="displayAll()" href="#"><strong>ALL</strong></a></li>
+            <li><a onclick="displayExp()" href="#">Experimentation</a></li>
+            <li><a onclick="displayBDA()" href="#">Big Data Analytics</a></li>
+            <li><a onclick="displayDB()" href="#">Databases</a></li>
+            <li><a onclick="displayProb()" href="#">Probability Distribution</a></li>
+            <li><a onclick="displayNLP()" href="#">Natural Language Processing</a></li>
+            <li><a onclick="displayML()" href="#">Machine Learning</a></li>
+            <li><a onclick="displayStat()" href="#">Statistical Tests</a></li>
+            <li><a onclick="displayResearch()" href="#">Research</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container projects">
+      <div class="flex-item classification">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/kids.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Classification of Collaborative Behavior</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex-item experimentation">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/abtests.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Enhance Student Experience - A/B Test</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex-item hadoop">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/clustering_web.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Deducing Structure of the Web (Hadoop and Pig</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex-item spark">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/user_groups.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Behavioral Advertising  (Spark)</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+        <div class="flex-item p2identification">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/pii.jpg" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Enron Email - Search for sensitive Information</h4>
+                <!-- <p>text for proejct highlights</p> -->
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+      <div class="flex-item nosql">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/food_recommendation.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Food Recommendation  (MongoDB)</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+        <div class="flex-item expertRecommendation">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/expert_recommendation.jpg" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Expert Recommendation</h4>
+                <!-- <p>text for proejct highlights</p> -->
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      <div class="flex-item sql">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/7.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">SQL</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+        <div class="flex-item randomf">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/8.png" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Machine Learning Notes</h4>
+                <!-- <p>text for proejct highlights</p> -->
+              </div>
+            </div>
+          </a>
+        </div>
+      <!--
+        <div class="flex-item svm">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/8.png" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">SVM</h4>
+                <p>text for proejct highlights</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex-item bagging">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/8.png" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Bagging</h4>
+                <p>text for proejct highlights</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item boosting">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/8.png" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Boosting</h4>
+                <p>text for proejct highlights</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item neuralnets">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/8.png" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Neural Networks</h4>
+                <p>text for proejct highlights</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        -->
+
+      <!--
+        <div class="flex-item hive">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/bigdata.jpg" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Hives</h4>
+                <p>text for proejct highlights</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item statTests">
+          <a href="#">
+            <div id="portfolioCards" class="card">
+              <img class="card-img-top" src="./img/3.gif" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title"> Statistical Tests </h4>
+                <p>text for proejct highlights</p>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    -->
+      <div class="flex-item pd">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/distributions.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Probability Distribution</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="flex-item statTests">
+        <a href="#">
+          <div id="portfolioCards" class="card">
+            <img class="card-img-top" src="./img/statistics.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Statistical Tests</h4>
+              <!-- <p>text for proejct highlights</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+    <div id="footer" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <p></p>
+          </div>
+          <div class="col-sm-4">
+            <p></p>
+          </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!--<script type="text/babel" src="./js/portfolioRoute.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="./js/portfolioGrid.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

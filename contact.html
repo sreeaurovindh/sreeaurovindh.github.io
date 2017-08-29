@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <meta name="referrer" content="origin">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light" style="padding-bottom: 0px;
+        margin-bottom: 0px;">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand"  href="index.html">Sree Aurovindh</a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul id="navLinks" class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Me
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="whois.html">Who is Sree Aurovindh</a>
+                  <a class="dropdown-item" href="research.html">Research and Work </a>
+                  <!-- <a class="dropdown-item" href="employment.html">Employment History</a> -->
+
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="folio.html">Portfolio</a>
+              </li><!--
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="container contactSection">
+      <br>
+      <h1 class="heading">Contact</h1><hr/><br>
+      <div class="row contactInfo">
+        <div class="col">
+          <blockquote>
+            <p>
+              “
+              I am thrilled by the fact that major worldly problems can be solved by applying a sound scientific method, where a problem statement can be explored by generating a hypothesis,
+              collecting and analyzing extensive datasets, then effectively communicating the results to enable key business decisions.
+              I strongly believe in group work and hope we can solve together to make the world a better place to live in! I think of data science, more like a skill to help humanity and to satisfy my intellectual curiosity"
+              </p>
+              <p align="right">- Sree Aurovindh Viswanathan</p>
+          </blockquote>
+          <h4> If you have any questions about my <a href="folio.html">project portfolio</a>, I would be very happy to answer them. I would like to thank you for your time to read through my pages. If you have a problem that we can solve together, please feel free to write to me! </h4><br>
+       
+       
+
+
+
+
+
+          <br>
+          <a href=""><h5 style="color: #78acc2; text-align: left;">Download my Curriculum Vitae Here</h5></a>
+        </div>
+        <div class="col">
+          <img style="width: 100%;" src="./img/team_work.jpg" alt="">
+        </div>
+      </div>
+    </div><br><br>
+    <div class="container">
+      <div class="row flex">
+        <div class="col-sm-4">
+          <br>
+          <div style="background-image:url('./img/slipes.png');
+          padding-left: 0px;">
+            <h3 style="font-weight: bold;" class="portfolioHeading">
+                My Location
+            </h3><br>
+          </div><br>
+          <div style="width: 100%;height: 400px;background-color: grey;" id="map"></div>
+          <script>
+              function initGoogleMap() {
+                  var uluru = {lat: 33.4235981, lng:-111.9395366};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 4,
+                      center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map
+                  });
+              }
+          </script>
+        </div>
+        <div class="col-sm-7">
+          <br>
+
+        <div style="background-image:url('./img/slipes.png');
+        padding-left: 0px;">
+          <h3 style="font-weight: bold;" class="portfolioHeading">
+              Get In Touch
+          </h3><br>
+        </div>
+          <div class="col-sm-7 contactForm">
+            <form method="POST" action="http://formspree.io/sreeaurovindh@gmail.com">
+              <input style="margin-top: 10px;" type="text" name="name" placeholder="Your Name"><br>
+              <input type="email" name="email" placeholder="Your email"><br>
+              <input type="text" name="subject" placeholder="Subject"><br>
+              <textarea name="message" placeholder="Your message"></textarea><br>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div><br>
+    </div><br>
+    <div id="footer" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <p></p>
+          </div>
+          <div class="col-sm-4">
+            <p></p>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/googleScript.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvU8JCNUEQttr  -k3IuYKoyJrZujZT3bRQ&callback=initGoogleMap">
+    </script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

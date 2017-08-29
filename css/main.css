@@ -1,0 +1,302 @@
+
+
+/*GLOBAL*/
+body {
+  padding-top: 70px;
+  font-family: cursive,'Open Sans', sans-serif;
+}
+.heading {
+  font-family: 'Merriweather', serif;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*NAVIGATION*/
+nav {
+  height: 5.5rem;
+  max-height: 100%;
+  border-bottom: 1px solid lightgray;
+  text-transform: uppercase;
+  background-color: white;
+}
+.dropdown-toggle::after {
+    display:none
+}
+.navbar-brand {
+  background-color: white;
+}
+#navbarNavDropdown {
+  background-color: white;
+  z-index: 10000;
+}
+#navLinks {
+  background-color: white;
+}
+
+.nav-link {
+  height: 100%;
+  padding-right: .7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.25s ease-in;
+}
+.nav-link:hover {
+  background-color: #F5F5F5;
+  border-bottom: 4.5px solid #b2c0cd;
+}
+#navbarNavDropdown{
+  height: 100%;
+}
+
+/*HERO SECTION*/
+#mainSlider img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+#stripedBars {
+  height: 15px;
+  background-image:url('../img/slipes.png');
+  background-repeat: repeat-x;
+}
+.owl-prev, .owl-next {
+  color: white;
+  background-color: darkgray;
+  padding: 12px;
+  margin: 4px;
+  border-radius: 8%;
+  transition: .25s;
+}
+.owl-prev:hover, .owl-next:hover {
+  color: darkgray;
+  background-color: white;
+  border: 2px solid darkgray;
+}
+.owl-nav {
+  display: flex;
+  justify-content: center;
+}
+
+/*ABOUT ME SECTION*/
+.aboutMe h3 {
+  color: #a5c6d3;
+  margin-top: 1rem;
+  text-align: center;
+}
+.aboutMe .col-sm {
+  transition: 0.25s ease-in;
+}
+.aboutMe .col-sm:hover {
+  background-color: #EBEBEB;
+}
+.aboutMe p {
+  color: black;
+}
+/*BLOG AND PREFERENCES*/
+.blogReferences {
+  display: flex;
+  justify-content: space-around;
+}
+/*WHO IS PAGE*/
+#whoIs h5 {
+  color: #78acc2;
+  text-align: center;
+}
+.skillsTweets {
+  display: flex;
+  justify-content: space-around;
+}
+.skillsTweets ul {
+  list-style: none;
+}
+.progress-bar {
+  justify-content: center;
+}
+
+
+/*PORTFOIO OF WORK*/
+.portfolioHeading {
+  background-color: white;
+  height: 100%;
+  display:inline;
+  text-align: left;
+  padding-right: 1%;
+  font-weight: bold;
+}
+#portfolioCards{
+  border: none;
+}
+#portfolioCards img {
+  width: 100%;
+  transition: all .2s ease-in-out;
+}
+#portfolioCards img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#portfolioCards h4 {
+  text-align: center;
+  color: darkgray;
+}
+#portfolioCards p {
+  color: darkgray;
+}
+/*PORTFOLIO NAV SECTION*/
+.projectNav ul {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.projectNav ul li {
+
+  text-align: center;
+  box-sizing: border-box;
+  transition: 0.25s ease-in;
+  padding: 10px;
+
+}
+.projectNav ul li:hover {
+  background-color: lightgray;
+  border-radius: 3%;
+}
+.projectNav a {
+  transition: 0.3s ease-in;
+  color: gray;
+}
+.projectNav a:hover {
+  background-color: lightgray;
+  border-radius: 3%;
+}
+.projects img {
+  transition: all .2s ease-in-out;
+  max-height: 184px;
+}
+.projects img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.projects .card {
+  border: none;
+}
+.projects .card h4, .projects .card p {
+  text-align: center;
+}
+.projects {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.flex-item {
+  max-width:300px;
+}
+
+/*Contact FORM STYLING*/
+
+.contactSection h4 {
+  font-size: 1.25rem;
+}
+.contactForm input {
+  margin-bottom: 20px;
+  height: 42px;
+  width: 75%;
+  border-radius: 2.5%;
+  background-color: #EBEBEB;
+  border: none;
+  padding: 8px;
+}
+.contactForm textarea {
+  width: 100%;
+  border-radius: 2.5%;
+  background-color: #EBEBEB;
+  border: none;
+  padding: 8px;
+  height: 180px;
+}
+/*BLOG PAGE*/
+.blogAndCategories {
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.tagCloud button {
+  margin: 1px;
+  background-color: lightgray;
+  transition: 0.3s ease-in;
+}
+.tagCloud button:hover {
+  background-color: gray;
+}
+.tagCloud {
+  justify-content:space-between;
+  flex-flow:row wrap;
+}
+.sideBar {
+  flex-wrap: wrap;
+}
+#categories a, #button button, #categories div {
+  width: 100%;
+}
+.badgeCloud span {
+  margin: 3px;
+}
+.badgeCloud {
+  flex-wrap: wrap;
+}
+blockquote {
+    background: #f7f7f7;
+    border-left: 1px solid #bbb;
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+
+/*RESUME PAGE*/
+.resumeEntry {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.resumeEntry h3, .resumeEntry h4 {
+  font-size: 140%;
+}
+.resumeEntry img {
+  max-width: 5rem;
+}
+.resumeEntry h3 {
+  font-weight: bold;
+
+}
+.resumeEntry ul{
+  list-style-type: circle;
+}
+.resumeEntry li {
+  padding-bottom: 5px;
+}
+.skillsBadge {
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
+.resumeEntry button {
+  margin-right: 7px;
+}
+
+/*FOOTER*/
+#footer {
+  background-color: #1a1a1a;
+  color: gray;
+  width: 100%;
+}
+#footer .row {
+  padding-top: 20px;
+}
